@@ -198,7 +198,7 @@ export default PurpleBorder
 ```
 
 The `<PurpleBorder />` component might look something like this, wrapping the MDX
-document in a `<div>` with a 1px purple border:
+document in a `<div>` with a `1px` purple border:
 
 ```jsx:title=src/components/purple-border.js
 import React from "react"

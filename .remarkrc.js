@@ -1,5 +1,16 @@
 module.exports = {
   plugins: [
+    [
+      "remark-retext",
+      require("unified")()
+        .use(require("retext-english"))
+        // .use(require("retext-spell"), {
+        //   dictionary: require("dictionary-en"),
+        // })
+        // .use(require("retext-passive"))
+        // .use(require("retext-indefinite-article"))
+        .use(require("retext-redundant-acronyms")),
+    ],
     ["remark-frontmatter", "yaml"],
     "remark-preset-lint-recommended",
     "remark-preset-lint-markdown-style-guide",

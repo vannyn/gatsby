@@ -103,7 +103,7 @@ Gatsby Cloud Builds works in similar ways to build services like Heroku, Netlify
 We're tackling this problem in our Gatsby Cloud Builds service through two strategies that take advantage of the special nature of cloud computing.
 
 - Parallelizing CPU/IO/Network bound tasks across cloud functions e.g., image processing
-- Heavily caching build artifacts so incremental builds are much much faster
+- Heavily caching build artifacts so incremental builds are much, much faster
 
 I explicitly designed Gatsby so the build process could be decomposed and run many times faster in a cloud environment. All Gatsby site & plugin code will run the exact same way in Cloud Builds as they run locally—just now heavily parallelized and cached.
 
