@@ -13,7 +13,7 @@ You'll need these in the next step.
 Install the AWS CLI and configure it (ensure Python is installed before running these commands):
 
 ```shell
-pip install awscli
+brew install awscli
 aws configure
 ```
 
